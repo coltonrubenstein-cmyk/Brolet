@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BROLET</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg,#3b82f6,#9333ea);
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .container{
+        width:900px;
+        height:520px;
+        background:white;
+        border-radius:25px;
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        display:flex;
+    }
+
+    .sidebar{
+        width:220px;
+        background:#1e293b;
+        color:white;
+        padding:25px;
+    }
+
+    .logo{
+        font-size:36px;
+        font-weight:bold;
+        margin-bottom:40px;
+        color:#60a5fa;
+    }
+
+    .menu button{
+        width:100%;
+        padding:15px;
+        margin-bottom:15px;
+        border:none;
+        border-radius:12px;
+        background:#334155;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:0.2s;
+    }
+
+    .menu button:hover{
+        background:#3b82f6;
+        transform:scale(1.03);
+    }
+
+    .main{
+        flex:1;
+        padding:30px;
+        background:#f8fafc;
+    }
+
+    .topbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:30px;
+    }
+
+    .topbar h1{
+        color:#111827;
+    }
+
+    .play-btn{
+        background:#22c55e;
+        color:white;
+        border:none;
+        padding:12px 24px;
+        border-radius:12px;
+        font-size:18px;
+        cursor:pointer;
+        transition:0.2s;
+    }
+
+    .play-btn:hover{
+        background:#16a34a;
+        transform:scale(1.05);
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .card{
+        background:white;
+        border-radius:18px;
+        padding:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        transition:0.2s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    .card h2{
+        margin-bottom:10px;
+        color:#2563eb;
+    }
+
+    .card p{
+        color:#475569;
+    }
+
+    .blook{
+        width:80px;
+        height:80px;
+        background:#facc15;
+        border-radius:20px;
+        margin-bottom:15px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:40px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <div class="logo">BROLET</div>
+
+        <div class="menu">
+            <button>🏠 Home</button>
+            <button>🎮 Play</button>
+            <button>📚 Sets</button>
+            <button>🏆 Stats</button>
+            <button>⚙ Settings</button>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+            <h1>Welcome to BROLET!</h1>
+            <button class="play-btn">PLAY NOW</button>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="blook">😎</div>
+                <h2>Classic Mode</h2>
+                <p>Answer questions and climb the leaderboard.</p>
+            </div>
+
+            <div class="card">
+                <div class="blook">💰</div>
+                <h2>Gold Rush</h2>
+                <p>Steal gold and become the richest player.</p>
+            </div>
+
+            <div class="card">
+                <div class="blook">⚔</div>
+                <h2>Battle Mode</h2>
+                <p>Fight opponents using your knowledge.</p>
+            </div>
+
+            <div class="card">
+                <div class="blook">🚀</div>
+                <h2>Space Race</h2>
+                <p>Race to the finish by answering fast.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
