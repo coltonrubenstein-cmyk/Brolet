@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BROLET</title>
+
+<style>
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+        background:linear-gradient(135deg,#4f46e5,#9333ea);
+        color:white;
+    }
+
+    header{
+        text-align:center;
+        padding:30px;
+        font-size:50px;
+        font-weight:bold;
+        background:rgba(0,0,0,0.2);
+        box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+        padding:30px;
+    }
+
+    .card{
+        background:white;
+        color:black;
+        width:320px;
+        border-radius:20px;
+        padding:20px;
+        box-shadow:0 8px 20px rgba(0,0,0,0.3);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    h2{
+        text-align:center;
+    }
+
+    .auction-item{
+        background:#f3f4f6;
+        padding:12px;
+        margin:10px 0;
+        border-radius:12px;
+    }
+
+    .stats{
+        font-size:20px;
+        line-height:2;
+    }
+
+    .bottom-bar{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        background:rgba(0,0,0,0.3);
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        padding:15px;
+    }
+
+    .dev-btn{
+        background:#facc15;
+        border:none;
+        padding:14px 25px;
+        border-radius:12px;
+        font-size:18px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .dev-btn:hover{
+        background:#fde047;
+        transform:scale(1.05);
+    }
+
+    .auction-btn{
+        background:#4f46e5;
+        color:white;
+        border:none;
+        padding:10px 18px;
+        border-radius:10px;
+        cursor:pointer;
+        font-weight:bold;
+    }
+
+    input{
+        width:95%;
+        padding:10px;
+        margin-top:10px;
+        border-radius:10px;
+        border:1px solid gray;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    BROLET
+</header>
+
+<div class="container">
+
+    <!-- Auctions -->
+    <div class="card">
+        <h2>Auctions</h2>
+
+        <div class="auction-item">
+            🔥 Rare Space Pack
+            <br><br>
+            Current Bid: 500 Coins
+        </div>
+
+        <div class="auction-item">
+            ⚡ Golden Character
+            <br><br>
+            Current Bid: 1200 Coins
+        </div>
+
+        <input type="text" placeholder="Create Auction Item">
+        <br><br>
+        <button class="auction-btn">Post Auction</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="card">
+        <h2>Account Stats</h2>
+
+        <div class="stats">
+            👤 Username: Player1 <br>
+            🪙 Coins: 4,250 <br>
+            🏆 Wins: 87 <br>
+            ⭐ Level: 19
+        </div>
+    </div>
+
+</div>
+
+<!-- Bottom Buttons -->
+<div class="bottom-bar">
+
+    <button class="dev-btn"
+    onclick="window.open('https://youtube.com/@coltonvr6495?si=tSbaVuEi021RctNX')">
+        Developer
+    </button>
+
+    <button class="dev-btn"
+    onclick="window.open('https://youtube.com/@theblooketbro?si=S_6tD1eNhopyjcOO')">
+        Co-Developer
+    </button>
+
+</div>
+
+</body>
+</html>
